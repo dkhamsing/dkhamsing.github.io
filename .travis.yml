@@ -1,0 +1,19 @@
+language: ruby
+rvm: 2.2
+env:
+  global:
+  - secure: PMbDOfR1H4i/3Bz69M40qNSGw+uPjqdTEH7YD11CxP2Tb2FEx/grz1YjWuRtDKu04qLj/mUOG70zMaQsF+muHd7oi1k5iMrgxgSp5oe5vl68y8e4hwkMmX8PDWWM8epg1Q+a92Z5lNcKJqXc00T9datqXAEVez76DBKbwBoTVOk=
+  - secure: AK2+Vfd8vGffoc9ZHA8y3LQjYQ9HnSXAUjI8g65HnLO8hwsIkJ9RiUOBtkNllvu8Cq5uWaB3k9qaFYUIqJpYEKRnJHmpaq/E6+sxXZ9HBCPG1K/ypBi6RiwwYxtD+6bV1urAHEJDdoSYwpLtyTV2+r6hz/Dsi1lvAucdUX6hSH0=
+  - secure: Yru5048QRRbOxs7VsEnoKkVEyEdF8IUTBQw6U0lnqwQED7TYEDrNfCXL8Bc9pBvYHgCu3g+g6d7c/o8zBcpI1dMifBCqNNoNYeYgd2MuPBbgGVWFMuJ2Hlscy58WjfVe9OrxracbVmKiFd3Sn0A+GTDcL/bwDDoSmLDOYqy7tuU=
+  - secure: X3QXXyuuDn7qJfRhVCyVMIIkwykp2YTLEwZSxVhV+Eb1ShR93MgJ1K0FFafQ6lI91zuspYRMokOPP+PSuEIa+uVUtnLIuDqja6xDRVMziVQffKzi0CFSravJv9Xk0ZvE2dzvHsz/f8Xo1ImYZs9xI1Fnuw8Qn6Oncnr4QhHG8g8=
+  - secure: T+2CRvEeKwTc2Mrf8qgFNEVz1STBWZ1WXtLtSR41Q3RMSYAFklreB0drfU5kV71y4wloiafHHSUsDxTwHhBgxB8S0x7dnd4n07ISs8QbGzA52CpvPDt6PIzlOT0uJ0D0yZ58NMrqxYgUKi+w33MhD8HB3sx+yg/S5ALmsi14Wuw=
+before_script:
+  - gem install awesome_bot
+  - gem install markdown_html --pre
+  - gem install tumblr_client
+script:
+  - awesome_bot README.md
+after_success:
+  - markdown_html README.md
+  - ruby tumblr_update.rb
+  - github-update.sh
