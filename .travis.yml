@@ -16,4 +16,4 @@ script:
 after_success:
   - markdown_html README.md
   - ruby tumblr_update.rb
-  - github-update.sh
+  - ./github-update.sh
