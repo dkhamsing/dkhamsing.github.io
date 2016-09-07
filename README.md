@@ -12,6 +12,7 @@
 - [cocoapods-readme](https://github.com/dkhamsing/cocoapods-readme)
 - [bitbar-plugins](https://github.com/matryer/bitbar-plugins/commits?author=dkhamsing)
 - [how-much](https://github.com/dkhamsing/how-much)
+- [frankenstein](https://github.com/dkhamsing/frankenstein)
 
 # Contact
 
