@@ -2,7 +2,7 @@
 
 - [Guide to Name iOS Assets](https://github.com/dkhamsing/ios-asset-names)
 - [List of Open-Source iOS Apps](https://github.com/dkhamsing/open-source-ios-apps)
-- [DKScrollingTabController](https://github.com/dkhamsing/DKScrollingTabController)
+- [ScrollTab](https://github.com/dkhamsing/ScrollTab)
 - [TwitterSafariViewControllerAuth](https://github.com/dkhamsing/TwitterSafariViewControllerAuth)
 - [DKImageBrowser](https://github.com/dkhamsing/DKImageBrowser)
 - [BrandColors](https://github.com/dkhamsing/BrandColors)
